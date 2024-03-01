@@ -1,12 +1,24 @@
-<!DOCTYPE html>//Tipo de documento
+<!DOCTYPE html>
 <html long="es">
+
 <head>
 	<meta charset="UTF-8">
-	<meta namre "viewport" content="width=device-width, initial-scale-1.0">
+	<meta name ="viewport" content="width=device-width, initial-scale-1.0">
 	<title>HTML Introduction</title>
+	
+	<style>
+		table tr th{
+				border: 1px black solid;
+			}
+		table tr td{
+				border: 1px black solid;
+			}
+			
+	</style>
 </head>
 <body>
 	<h1>HTML Introduction</h1>
+	<div style="background-color: antiquewhite;">
 	<h2>What is HTML?</h2>
 	<ul>
 	 <li>Standar for Hyper text Markup Lenguage</li>
@@ -15,7 +27,9 @@
 	 <li>Elements tell the browser how to display the content</li>
 	 <li>Elements consist on pieces label with content</li>
 	</ul>
+	</div>
 
+	<div style="background-color: blanchedalmond;">
 	<h2>Basics Elements Explained</h2>
 	<ol>
 	 <li>La etiqueta "DOCTYPE" define la declaracion del documentoen cuestion como HTML</li>
@@ -27,7 +41,193 @@
 	 <li>La etiqueta "h2" define un texto de tamaño subtitular</li>
 	 <li>La etiqueta "p" define un texto de tamaño parrafo</li>
 	</ol>
+	</div>
 
+	<div style="background-color: antiquewhite;">
+	<h2>Que es un elemento HTML?</h2>
+	Un elemento HTML esta definido por una etiqueta de inicio seguido de algun contenido y una etiqueta de finalización
+	<ul>
+	 <li> &lt;nombreEtiqueta&gt;: equiqueta de inicio </li>
+	 <li>Contenido:entre la etiqueta de inicio y la etiqueta de finalización </li>
+	 <li> &lt;/nombreEtiqueta&gt;: etiqueta de finalización</li>
+	</ul>
+	</div>
+
+	<div style="background-color: blanchedalmond;">
+	<h2>Atributos HTML</h2>
+	Los atributos HTML proporcionan información adicional acerca de los elementos HTML(siempre son especificados en la etiqueta de inicio)
+	<p>Para imagenes: </p>
+	<ul>
+		<p>Formatos para imagenes: </p>
+
+		<p>Ingresar imagenes: </p>
+		<li> &lt;img src=""&gt; </li>
+	 	<img src="OIP.jpg">
+
+		<p>Modificar el ancho de las imagenes: </p>
+	 	<li> &lt;img src=" " width="280"&gt; </li>
+	 	<img src="OIP.jpg" width="280">
+
+		<p>Modificar el largo de las imagenes: </p>
+		<li> &lt;img src=" " width="200" height="200"&gt; </li>
+	 	<img src="OIP.jpg" width="200" height="200" >
+
+		<p>Ingresar un vinculo: </p>
+		<li> &lt;a href=""&gt; &lt;/a&gt; </li>
+		<a href="https://www.google.com">Click Aquí!</a>
+	</ul>
+	</div>
+
+	<div style="background-color: antiquewhite;">
+	<h2>Elementos HTML</h2>
+	<ul>
+	  <li>La etiqueta &lt;div&gt; Es usada como un contenedor para otros elementos HTML</li>
+	</ul>
+	Ejemplo:
+	<div>
+		<ul>
+			<li>Elemento1</li>
+			<li>Elemento2</li>
+			<li><div>Elemento3</div></li>
+		</ul>
+	</div>
+	Para hacerlo mas visible:
+	<div style="background-color: rgb(51, 111, 168);">
+		<ul>
+			<li>Elemento1</li>
+			<li>Elemento2</li>
+			<li><div style="background-color: rgb(131, 199, 245);">Elemento3</div></li>
+		</ul>
+	</div>
+	Cambiar el tamaño
+	<div style="background-color: rgb(51, 111, 168); width:300px;">
+		<ul>
+			<li>Elemento1</li>
+			<li>Elemento2</li>
+			<li><div style="background-color: rgb(131, 199, 245); width:80px;">Elemento3</div></li>
+		</ul>
+	</div>
+	</div>
+	<div style="background-color: blanchedalmond;">
+	<h2>Dar Formato a Elementos</h2>
+	<ul>
+		<li>&lt;b&gt; Un texto en negritas &lt;/b&gt;: texto en negritas</li> <b>texto en negritas</b>
+		<li>&lt;strong&gt;  Un texto en negritas &lt;/strong&gt: </li><strong>texto en negritas</strong>
+		<li>&lt;i&gt;Texto itálico&lt;/i&gt; </li> <i>Texto itálico</i>
+		<li>&lt;mark&gt;Texto itálico&lt;/mark&gt;</li> <mark>Texto resaltado</mark>
+	</ul>
+	</div>
+	<div style="background-color: antiquewhite;">
+	<h2>Estilos en HTML</h2>
+		Los estilos en HTML son atributos usados para añadir diseño a la etiquetas HTML asi como color, tamaño y mas.		
+	<h3>Estructura de Atributo de Estilos</h3>
+		Configurar el estilo en un elemento HTML se realiza utilizando el atributo HTML <mark>style</mark>.
+		&lt;lagname style= property: value, property2: value"" &gt; Contenido	&lt;/lagname&gt;
+		Modificar el color de la letra
+		<p style="color:red">Confitgurar el estilo de un elemento HTML se realiza usando el atributo HTML</p>
+		Agregar un fondo
+		<p style="color:red; background-color:black;">Confitgurar el estilo de un elemento HTML se realiza usando el atributo HTML</p>
+		Modificar el tamaño
+		<p style="color:red;font-size: 30px;">Confitgurar el estilo de un elemento HTML se realiza usando el atributo HTML</p>
+		Modificar el tipo de letra
+		<p style="color:red;font-family:cursive;">Confitgurar el estilo de un elemento HTML se realiza usando el atributo HTML</p>
+		Modificar donde se pone el texto
+		<p style="color:red;text-align: center;">Confitgurar el estilo de un elemento HTML se realiza usando el atributo HTML</p>
+	</div>
+
+		<h2>Imagenen centrada</h2>
+		<p>&lt;img src="OIP.jpg" style = "width:150px; height:150px; display: block; margin-left:auto; margin-right: auto;"&gt; <br>
+		Ejemplo:</p>
+		<img src="OIP.jpg" style = "width:150px; height:150px; display: block; margin-left:auto; margin-right: auto;">
+		
+	<div style="background-color: blanchedalmond;">
+		<h2>Etiqueta &lt;map&gt;</h2>
+		<p>La etiquetaueta <b>&lt;map&gt;</b> define el mapa de una imagen. Una imagen mapeada es una imagen que tiene distintas areas detectables<br>
+		por el navegador, logrando identificar de manera independiente cada una de las areas <br>
+		La etiqueta <b>&lt;map&gt;</b> define las areas de la imagen mediante la etiqueta &lt;area&gt; con los atributos HTML "shape" que define<br>
+		la forma del area señalada en la imagen, "coords" que define las coordenadas de cada uno de los puntos de shape, "href" que puede definir<br>
+		un hipervínculo para cada una de las areas. <br>
+		Ejemplo: <br>
+		 &lt;img src="workflow.jpg" usemap="#workmap"&gt; <br>
+		 &lt;map name="workmap"&gt; <br>
+		 	&lt; area shape = "rect" coord="34,44,270,350" href="pagina1.com"&gt; <br> 
+			&lt; area shape="circle" coord = "200,172,33,250" href="pagina2.com" <br>
+		&lt; /map&gt;</p>
+	</div>
+	<div style="background-color: antiquewhite;">
+		<h2>Elemento Table en HTML</h2>
+		<p>La etiqueta <b>&lt;table&gt;</b> permite colocar los datos en filas y columnas usando sus derivaciones <b>&lt;tr&gt;</b> para definir una fila(table row),<b>&lt;th&gt;</b><br>
+			para definir los encabezados de la tabla (table header) y <b>&lt;td&gt;</b> para asignar valores a las filas correspondientes a los encabezados de las columnas(table data)<br>
+		Ejemplo: <br>
+		&lt;table&gt; <br>
+				&lt;tr&gt;<br>
+					&lt;th&gt;Nombre&lt;/th&gt;<br>
+					&lt;th&gt;Apellido&lt;/th&gt;<br>
+					&lt;th&gt;Edad&lt;/th&gt;<br>
+					&lt;th&gt;Dirección&lt;/th&gt;<br>
+				&lt;/tr&gt;<br>
+				&lt;tr&gt;<br>
+					&lt;td&gt;Eduardo&lt;/td&gt;<br>
+					&lt;td&gt;Campos&lt;/td&gt;<br>
+					&lt;td&gt;18&lt;/td&gt;<br>
+					&lt;td&gt;Carre 38 #3 Col.Arboledas Qro.&lt;/td&gt;<br>
+				&lt;/tr&gt;<br>
+			&lt;/table&gt;<br>
+				Esto va abajo del titulo principal
+			Cambiar fuente de tabla:
+			orden 
+			table tr th{
+				Intruccion que se cambiara en donde lo ordenas
+				border: 1px black solid;
+			}
+		</p>
+	
+		Ejemplo:
+		<table style="border: 1px black solid; border-collapse: collapse;">
+			<tr>
+				<th>Nombre</th>
+				<th>Apellido</th>
+				<th>Edad</th>
+				<th>Dirección</th>
+			</tr>
+			<tr>
+				<td>Eduardo</td>
+				<td>Campos</td>
+				<td>18</td>
+				<td>Carre 38 #3 Col.Arboledas Qro.</td>
+			</tr>
+		</table>
+		<p style="margin: 0;">Hola</p>	
+	</div>
+
+	
+
+	<div style="background-color: blanchedalmond;">
+	<h2>Elemento HTML "DIV"</h2>
+	<p>
+		La etiqueta &lt;div&gt; es un elemento que toma el ancho de la pagina por defwecto y realiza automáticamente un salto de linea despues de cada elemento.<br>
+		<b>&lt;div&gt; se puede interpretar como un contenedor de elementos HTML.</b> <br>
+		&lt;div&gt; <br>
+		&lt;h1&gt;Titulo&lt;/h1&gt; <br>
+		&lt;img src="imagen" style = "width: 150 px; height: 350 px;"&gt; <br>
+		&lt;/div&gt;<br> 
+	</p>
+	Ejemplo:
+	<div style="display: flex;">
+	<div class="ElementosFormato" style="background-color: blanchedalmond; display: flex; width: 30%;">
+		<h1>Titulo</h1>
+		<p>Texto para el titulo</p>
+		<img src="OIP.jpg" style = "width: 150 px;">
+	</div>
+	<div style="background-color: rgb(211, 176, 124); display: flex; width: 30%;">
+		<h1>Titulo 2</h1>
+		<p>Texto para el titulo 2</p>
+		<img src="OIP.jpg" style = "width: 150 px;">
+	</div>
+	</div>
+</div>
+		
+		
 
 </body>
 </html>
